@@ -1,0 +1,47 @@
+body{
+	font-family: Helvetica,Arial,sans-serif;
+	background-color: #bbddee;
+}
+
+#container{
+	width: 700px;
+	margin: 0 auto;
+	background-color: rgba(0,255,0,0.5);
+	border-radius: 10px;
+	box-shadow: 0 0 30px #ff0000;
+	margin-top: 100px;
+	-webkit-transition: 1s all;
+	overflow:hidden;
+}
+
+#left-panel{
+	width: 160px;
+}
+
+#right-panel{
+	width: 460px;
+}
+
+.panel{
+	float:left;
+	padding:20px;
+}
+
+#profile-picture{
+	width: 100%;
+	border: 3px solid white;
+}
+
+a{
+	color: #ffffff;
+}
+
+a:hover{
+	color:#dddddd;
+}
+
+a:active {
+	color:#aaaaaa;
+}
+
+/* comment */ 
