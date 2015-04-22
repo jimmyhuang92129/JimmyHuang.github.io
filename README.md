@@ -1,4 +1,4 @@
-jimmyhuang.github.io
+JimmyHuang.github.io
 =========================
 
 Personal Website for Jimmy Huang 
