@@ -1,0 +1,124 @@
+/*.class1 .class2 {
+ Selects elements of class2 whose parents are class1 
+}
+.class1.class2 {
+ Selects elements of BOTH class1 and class2. 
+}
+.class1, .class2 {
+ Selects elements of EITHER class1 and class2. 
+}
+p:nth-child(3) {
+ Selects every <p> that is the 3rd one of its parent 
+*/
+
+/*.test{
+	background-color:blue;
+}*/
+body{
+	font-family:Lato;
+}
+
+/*Navigation Bar*/
+#sidebar-name{
+	font-size: 2.5em;
+	font-weight: bold;
+	width:300px;
+
+	margin:30px;
+	margin-left:5%;
+}
+nav ul {
+    list-style-type: none;
+   	text-align: center;
+/*    position:absolute;
+    right:10px;
+    top:10px;
+    margin:30px;*/
+}
+.site-navigation{
+
+}
+.site-navigation li {
+    display: inline-block;
+}
+.site-navigation li a {
+    width: 10px;
+    padding: 0.8em;
+    font-weight: 500;
+    font-size: 18px;
+}
+.site-navigation li a[href] {
+    color: white;
+    transition: .4s all;
+}
+.site-navigation li a[href]:hover {
+    border-bottom: solid .2em white;
+    border-width: 2px;
+}
+ul li a[href] {
+    text-decoration: none;
+    border-bottom: solid .2em transparent;
+    border-width: 2px;
+    transition: .4s all;
+}
+
+#background-image{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	filter: blur(3px);
+	-webkit-filter: blur(1px);
+	-mox-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+#front-name{
+	text-align: center;
+	margin:30px;
+	margin-bottom:0px;
+	font-size: 7em;
+	color:white;
+}
+
+#name-nav-container{
+	margin-top:350px;
+
+}
+
+/*Backgound Stuff*/ 
+#background-image{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	filter: blur(3px);
+	-webkit-filter: blur(1px);
+	-mox-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+#background-overlay{
+    position: fixed;
+	top: 0px;
+	left: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-mox-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    z-index: -1;
+ }

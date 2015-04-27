@@ -1,0 +1,147 @@
+/*.class1 .class2 {
+ Selects elements of class2 whose parents are class1 
+}
+.class1.class2 {
+ Selects elements of BOTH class1 and class2. 
+}
+.class1, .class2 {
+ Selects elements of EITHER class1 and class2. 
+}
+p:nth-child(3) {
+ Selects every <p> that is the 3rd one of its parent 
+*/
+
+/*.test{
+	background-color:blue;
+}*/
+
+body{
+	font-family:Lato;
+}
+
+/*Navigation Bar*/
+#sidebar-name{
+	font-size: 2.5em;
+	font-weight: bold;
+	width:300px;
+
+	margin:30px;
+	margin-left:5%;
+}
+nav ul {
+    list-style-type: none;
+   
+    position:absolute;
+    right:10px;
+    top:10px;
+    margin:30px;
+
+}
+.site-navigation{
+
+}
+.site-navigation li {
+    display: inline-block;
+}
+.site-navigation li a {
+    width: 10px;
+    padding: 0.8em;
+    font-weight: 500;
+    font-size: 18px;
+}
+.site-navigation li a[href] {
+    color: black;
+    transition: .4s all;
+}
+.site-navigation li a[href]:hover {
+    border-bottom: solid .2em black;
+    border-width: 2px;
+}
+ul li a[href] {
+    text-decoration: none;
+    border-bottom: solid .2em transparent;
+    border-width: 2px;
+    transition: .4s all;
+}
+
+/*LIST VIEW*/
+/*Project Title*/
+#list-title{
+	margin:30px;
+	margin-bottom:16px;
+	text-align: center;
+	font-size: 4em;
+}
+
+body, html {
+	margin: 0;
+	font-family: Lato;
+/*	background-color: #ededed;*/
+	-webkit-font-smoothing: antialiased;
+}
+.list-image {
+	/*width: 720px;*/
+	height:360px;
+	display: block;
+	margin:0 auto;
+	padding:10px;
+	background-color: black;
+	border-radius: 10px;	
+	margin-top:30px;
+}
+
+.clear {
+	clear: both;
+}
+p {
+	margin: 0;
+}
+h4, .blog_header {
+	margin: 0;
+	color: #1a1a1a;
+	font-weight: 300;
+}
+
+/*#container {
+	width: 980px;
+	margin: 0 auto;
+}*/
+.blog_text_container {
+	margin:30px;
+}
+
+#page_header {
+	font-size: 46px;
+	text-align: center;
+}
+.blog_container {
+	width: 70%;
+	box-sizing: border-box;
+	/*float: left;*/
+	background-color: white;
+/*	border-bottom: 1px solid rgba(0,0,0,0.2);*/
+	margin: 0 auto;
+
+}
+.blog_header {
+	color: #1a1a1a;
+	font-weight: 400;
+	font-size: 30px;
+
+}
+.blog_subtitle {
+	color: #949799;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .025em;
+	margin:20px;
+}
+.blog_paragraph {
+	font-size: 16px;
+	font-weight: 400;
+	color: #666;
+	line-height: 1.5em;
+}
+
+
