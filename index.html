@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>MASS</title>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+       
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start"></div>
+			<h1>MASS</h1>
+			<div class="start">Mechanically Assisted Spring Shoes</div>
+		</div>
+
+        <a href="#services">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">MASS</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Overview</a></li>
+                        <li><a href="#gear-assembly">Gear Assembly</a></li>
+                        <li><a href="#pin-joined-rods">Pin-Joined Rods</a></li>
+						<li><a href="#electroincs">Electroincs</a></li>
+						<li><a href="#arduino-code">Arduino Code</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+    <!-- Overview start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Overview</h2>
+						<div class="pfblock-line"></div>
+						<p class="pfblock-subtitle">
+							This project aimed to prototype the mechanism for mechanically-assisted spring shoes. The basic principle behind the design is the storage of spring potential energy using the weight of a person to compress four vertical springs as well as the torque of a stepper motor to compress two horizontal springs.
+						</p>
+						<p>.</p>
+						<p class="pfblock-subtitle">
+							The device triggers when a force sensitive resistor experiences a force above a certain threshold, simulating the increased weight distribution toward a person's toes prior to jumping. Once the device is triggered, the energy stored in the horizontal springs is used to deliver an upward impulse, allowing the user to potentially jump higher.
+						</p>
+
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/overview-1.jpg" alt="Prototype Overview" />
+                    <blockquote>
+                      <p>Overview of our prototype's completed mechanical and electrical assembly.</p>
+                      <footer>04/28/2015</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/overview-3.jpg" alt="Jimmy" />
+                    <blockquote>
+                      <p>Initial Solidworks Design</p>
+                      <footer>02/03/2015</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/overview-2.jpg" alt="Exposition Booth" />
+                    <blockquote>
+                      <p>Our booth containing our prototype and presentation board at the UC Berkeley Mechanical Engineering 102B Exposition </p>
+                      <footer>05/01/2015</footer>
+                    </blockquote>
+                </div>
+              
+                 <div class="cbp-qtcontent">
+                    <img src="assets/images/overview-4.jpg" alt="Jimmy" />
+                    <blockquote>
+                      <p>Jimmy Huang, one of our team members, at the Mechanical Engineering 102B Exposition</p>
+                      <footer>05/01/2015</footer>
+                    </blockquote>
+                </div>
+            </div>		
+
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+	<!-- Overview end -->
+
+	<!-- Gear Assembly start -->
+
+	<section id="gear-assembly" class="pfblock pfblock-gray">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Gear Assembly</h2>
+						<div class="pfblock-line"></div>
+						<p class="pfblock-subtitle">
+							At the heart of the mechanical design of the project, a compact gear assembly is used to interface with the stepper motor. Initially, a gear mounted on the shaft of the motor meshes with another gear in the assembly, changing the direction of the axis of rotation. This second gear shares an axle with another gear, which meshes with a linear rack resting above the gear assembly.
+						</p>
+						<p>.</p>
+						<p class="pfblock-subtitle">
+							This assembly converts the rotational motion of the motor into a linear motion that ultimately compresses the springs. However, the third gear in the assembly is a "partial gear," meaning several of its teeth are missing. Consequently, as the motor rotates, the springs will only be compressed up to a certain point. Upon reaching this point, the partial gear loses its grip on the linear rack, causing the springs to be released.
+						</p>
+
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/gear-1.jpg" alt="Linear Rack" />
+                    <blockquote>
+                      <p>Linear rack attached to carriage for compression of springs</p>
+                      <footer>04/12/2015</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/gear-2.jpg" alt="Half Gear Assembly" />
+                    <blockquote>
+                      <p>Second gear (left) and partial gear (right) of gear assembly</p>
+                      <footer>04/15/2015</footer>
+                    </blockquote>
+                </div>
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+	<!-- Gear Assembly end -->
+
+	<!-- Pin-Joined Rods start -->
+
+	<section id="pin-joined-rods" class="pfblock pfblock-gray">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Pin-Joined Rods</h2>
+						<div class="pfblock-line"></div>
+						<p class="pfblock-subtitle">
+							Upon releasing the springs, the carriage is propelled horizontally. In order to convert the horizontal motion into a vertical impulse, pin-jointed rods were used. These rigid rods were attached to the railing on one side by a pin joint while the other side was attached to an acrylic top plate by a bracket. Consequently, when the carriage collides with the bottom of the rods, they would be forced into a vertical orientation, causing the acrylic top plate to experience a significant upward impulse.
+						</p>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/pin-joint-1.jpg" alt="Pin-Joined Rod" />
+                    <blockquote>
+                      <p>Horizontal railing assembly for the pin-joint mechanism.</p>
+                      <footer>04/19/2015</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/pin-joint-2.jpg" alt="Pin-Joined Rod" />
+                    <blockquote>
+                      <p>Rod connected by pin-joint to horizontal railing under carriage.</p>
+                      <footer>04/24/2015</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/pin-joint-3.jpg" alt="Pin-Joined Rod" />
+                    <blockquote>
+                      <p>Completed pin-joint assembly with acrylic top plate.</p>
+                      <footer>04/26/2015</footer>
+                    </blockquote>
+                </div>
+                
+            </div>		
+
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+	<!-- Pin-Joined Rods end -->
+
+	<!-- Electronics start -->
+
+	<section id="electroincs" class="pfblock pfblock-gray">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Electroincs</h2>
+						<div class="pfblock-line"></div>
+						<p class="pfblock-subtitle">
+							Our project utilized a Nema 17 planetary-geared stepper motor for actuation of the gear assembly and subsequent compression of the springs. We chose the A4988 stepper driver chip for interfacing with the stepper motor due to its relatively high current rating of 2A per coil, allowing for the high torque required for our project. An external power supply was used to provide power to the motor and driver.
+						</p>
+						<p>.</p>
+						<p class="pfblock-subtitle">
+							In order to provide a suitable trigger mechanism for our device, we also utilized a force sensitive resistor capable of sensing up to 20 pounds of force. By connecting it in series with a resistor and reading the intermediate voltage with the Arduino, logic could be employed to set a threshold at which the project's release mechanism was triggered.
+						</p>
+						<p>.</p>
+						<p class="pfblock-subtitle">
+							Several push button circuits were also implemented on the Arduino's breadboard in order to provide a method of manually triggering the device as well as for debugging purposes.
+						</p>
+
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/electronics-1.jpg" alt="Wiring Diagram" />
+                    <blockquote>
+                      <p>Wiring diagram for the stepper and A4988 chip, mounted onto Sparkfun's "Big Easy Driver" board.</p>
+                      <footer>02/11/2015</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/electronics-2.jpg" alt="client-2" />
+                    <blockquote>
+                      <p>20 lb force sensitive resistor by Sparkfun</p>
+                      <footer>03/08/2015</footer>
+                    </blockquote>
+                </div>
+                  <div class="cbp-qtcontent">
+                    <img src="assets/images/electronics-3.jpg" alt="client-2" />
+                    <blockquote>
+                      <p>Overall circuit, including stepper motor driver, force sensitive resistor circuit, and push button circuits</p>
+                      <footer>03/22/2015</footer>
+                    </blockquote>
+                </div>
+            </div>		
+
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+	<!-- Electronics end -->
+
+<!-- Arduino Code start -->
+
+	<section id="arduino-code" class="pfblock pfblock-gray">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Arduino Code</h2>
+						<div class="pfblock-line"></div>
+						<p class="pfblock-subtitle">
+							The Arduino code begins by declaring various pin output types and intermediate variables. In particular, digital pins 2-7 are output logic pins used to interface with the stepper motor driver, while analog pins 0, 1, 2, and 5 are used to sense user activity related to the force sensitive resistor and the three push buttons.
+						</p>
+						<p>.</p>
+						<p class="pfblock-subtitle">
+							In the main loop, the Arduino reads its analog pins. If pin 1's button is pressed, ManualStep( ) is called, causing the stepper motor to step counterclockwise for as long as the button is held. Likewise, if pin 2's button is pressed, revStep( ) causes the stepper motor to step clockwise for as long as its corresponding button is held. Both functions operate as tools for initializing the system as well as debugging.
+						</p>
+						<p>.</p>
+						<p class="pfblock-subtitle">
+							Finally, if pin 0's button is pressed, or the force sensitive resistor experiences a force above a certain threshold, Actuate( ) is called. Upon calling Actuate( ), the stepper motor will turn counterclockwise until the force sensitive resistor no longer senses a significant force, an event which represents the triggering of the mechanism. After this "triggering" phase, the code enters the "winding" phase, in which the stepper motor rotates counterclockwise until it approximately returns to its initial position, allowing for the process to be repeated. The Arduino code is shown below.
+						</p>	
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/arduino-1.jpg" alt="Arduino Code Page 1 of 3" />
+                    <blockquote>
+                      <p>Arduino Code Page 1 of 3</p>
+                      <footer>03/27/2015</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/arduino-2.jpg" alt="Arduino Code Page 1 of 3" />
+                    <blockquote>
+                      <p>Arduino Code Page 2 of 3</p>
+                      <footer>03/27/2015</footer>
+                    </blockquote>
+                </div>
+                  <div class="cbp-qtcontent">
+                    <img src="assets/images/arduino-3.jpg" alt="Arduino Code Page 1 of 3" />
+                    <blockquote>
+                      <p>Arduino Code Page 3 of 3</p>
+                      <footer>03/27/2015</footer>
+                    </blockquote>
+                </div>
+            </div>		
+
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+	<!-- Arduino Code end -->
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Drop us a line</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<div class="name">Jimmy Huang</div>
+							<div>B.S. Mechanical Engineering '16</div>
+							<div>University of California, Berkeley</div>
+							<div>jimmy_huang@berkeley.edu</div>		
+						</div>
+						<div class="pfblock-subtitle">
+							<div class="name">Alex Toyoda</div>
+							<div>B.S. Mechanical Engineering '16</div>
+							<div>University of California, Berkeley</div>
+							<div>alex_toyoda@berkeley.edu</div>					
+						</div>
+						<div class="pfblock-subtitle">
+							<div class="name">Karwin Liu</div>
+							<div>B.S. Mechanical Engineering '15</div>
+							<div>University of California, Berkeley</div>
+							<div>fengliu414@gmail.com</div>					
+						</div>
+						<div class="pfblock-subtitle">
+							<div class="name">Frank Liao</div>
+							<div>B.S. Mechanical Engineering '15</div>
+							<div>University of California, Berkeley</div>
+							<div>050220frank@gmail.com</div>						
+						</div>
+						<div class="pfblock-subtitle">
+							<div class="name">Laura Li</div>
+							<div>B.S. Mechanical Engineering '15</div>
+							<div>University of California, Berkeley</div>
+							<div>laura1007@berkeley.edu</div>						
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+
+				<!-- 	<p class="heart">
+                        Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Nottingham
+                    </p> -->
+               <!--      <p class="copyright">
+                        © 2015 John Doe | Images: <a href="https://unsplash.com/">Unsplash</a> & <a href="http://zoomwalls.com/">Zoomwalls</a>
+					</p> -->
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+    
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
